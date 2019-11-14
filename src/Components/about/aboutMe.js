@@ -3,17 +3,6 @@ import styled from "styled-components";
 import me from "../../images/patrick.png";
 
 const AboutMe = () => {
-  // const AboutTitle = styled.h1`
-  //     font-family: 'Poppins', sans-serif;
-  //     font-size: 40px;
-  //     `
-
-  // const DescriptionAboutMe = styled.div`
-  // width: 60%;
-  // font-family: 'Poppins', sans-serif;
-  // float: right;
-  // `;
-
   const PatrickPic = styled.img`
     width: 280px;
     height: 280px;
