@@ -15,6 +15,7 @@ const Contact = () => {
 
   const ContactInfo = styled.div`
     width: 60%;
+    height: auto;
     text-align: center;
     margin: 20px auto;
     font-family: "Poppins", sans-serif;
@@ -51,26 +52,24 @@ const Contact = () => {
   `;
 
   return (
-    <div>
+    <ContactInfo>
       <ReachOut>Reach Out</ReachOut>
-      <ContactInfo>
-        <ContactLink
-          href="https://www.linkedin.com/in/patrickdeanjohnson/"
-          target="_blank"
-        >
-          <Logo src={LinkedIn} />
-        </ContactLink>
-        <ContactLink href="https://github.com/patrickj188" target="_blank">
-          <Logo src={GitHub} />
-        </ContactLink>
-        <ContactLink href="mailto:patrickj188Dev@gmail.com" target="_blank">
-          <Logo src={Email} />
-        </ContactLink>
-        <ContactLink href={resume} target="_blank">
-          <Logo src={ResumeLogo} />
-        </ContactLink>
-      </ContactInfo>
-    </div>
+      <ContactLink
+        href="https://www.linkedin.com/in/patrickdeanjohnson/"
+        target="_blank"
+      >
+        <Logo src={LinkedIn} />
+      </ContactLink>
+      <ContactLink href="https://github.com/patrickj188" target="_blank">
+        <Logo src={GitHub} />
+      </ContactLink>
+      <ContactLink href="mailto:patrickj188Dev@gmail.com" target="_blank">
+        <Logo src={Email} />
+      </ContactLink>
+      <ContactLink href={resume} target="_blank">
+        <Logo src={ResumeLogo} />
+      </ContactLink>
+    </ContactInfo>
   );
 };
 

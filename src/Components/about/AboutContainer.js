@@ -6,7 +6,7 @@ import Contact from "./Contact";
 const AboutContainer = () => {
   const AboutDiv = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
     text-align: center;
     padding-top: 10px;
@@ -15,15 +15,16 @@ const AboutContainer = () => {
     -ms-animation: fadein 2s;
     -o-animation: fadein 2s;
     animation: fadein 2s;
+    @media (max-width: 1000px) {
+      width: 100%;
+      height: auto;
+    }
   `;
-
   return (
-    <div className="fadein">
-      <AboutDiv>
-        <AboutMe />
-        <Contact />
-      </AboutDiv>
-    </div>
+    <AboutDiv>
+      <AboutMe />
+      <Contact />
+    </AboutDiv>
   );
 };
 

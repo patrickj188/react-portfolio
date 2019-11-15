@@ -25,6 +25,11 @@ const AboutMe = () => {
     flex-direction: row;
     @media (max-width: 1000px) {
       width: 100%;
+      height: auto;
+    }
+    @media (max-width: 575px) {
+      width: 100%;
+      height: auto;
     }
   `;
 
@@ -55,28 +60,19 @@ const AboutMe = () => {
   `;
 
   return (
-    <div>
-      <AboutContainer>
-        <PatrickPicContainer>
-          <PatrickPic src={me} />
-        </PatrickPicContainer>
-        <DescriptionContainer>
-          <AboutText>
-            Hello, my name is Patrick! I am an innovative, self-starter, and
-            creative full stack developer from Dallas, TX. Welcome to my
-            portfolio! Take a look around, and if you like what you see, give me
-            a shout and let's talk!
-          </AboutText>
-        </DescriptionContainer>
-      </AboutContainer>
-
-      {/* <AboutTitle>About Me</AboutTitle>
-            <PatrickPic src={me} />
-            <DescriptionAboutMe>
-            I am a full stack developer from Dallas, TX. My adventure in coding began last year and I've been having fun ever since. 
-            Are you looking for an innovative, self-starter, and creative team member? Give me a shout and let's talk!
-            </DescriptionAboutMe> */}
-    </div>
+    <AboutContainer>
+      <PatrickPicContainer>
+        <PatrickPic src={me} />
+      </PatrickPicContainer>
+      <DescriptionContainer>
+        <AboutText>
+          Hello, my name is Patrick! I am an innovative, self-starter, and
+          creative full stack developer from Dallas, TX. Welcome to my
+          portfolio! Take a look around, and if you like what you see, give me a
+          shout and let's talk!
+        </AboutText>
+      </DescriptionContainer>
+    </AboutContainer>
   );
 };
 
