@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Email from "../../images/Email.png";
 import GitHub from "../../images/GitHub.png";
 import LinkedIn from "../../images/LinkedIn.png";
+import ResumeLogo from "../../images/resume.png";
+import resume from "../../images/PatrickJohnson_Resume.pdf";
 
 const Contact = () => {
   const ReachOut = styled.h1`
@@ -21,7 +23,7 @@ const Contact = () => {
   const ContactLink = styled.a`
     text-decoration: none;
     color: black;
-    margin: 0 20px;
+    margin: 0 30px;
 
     &:visited {
       text-decoration: none;
@@ -42,20 +44,30 @@ const Contact = () => {
     }
   `;
 
-  const Logo = styled.img``;
+  const Logo = styled.img`
+    filter: grayscale(100%);
+    width: 100px;
+    height: auto;
+  `;
 
   return (
     <div>
       <ReachOut>Reach Out</ReachOut>
       <ContactInfo>
-        <ContactLink href="https://www.linkedin.com/in/patrickdeanjohnson/">
-          LinkedIn Logo
+        <ContactLink
+          href="https://www.linkedin.com/in/patrickdeanjohnson/"
+          target="_blank"
+        >
+          <Logo src={LinkedIn} />
         </ContactLink>
-        <ContactLink href="https://github.com/patrickj188">
-          GitHub Logo
+        <ContactLink href="https://github.com/patrickj188" target="_blank">
+          <Logo src={GitHub} />
         </ContactLink>
-        <ContactLink href="mailto:patrickj188Dev@gmail.com">
-          Mail Logo
+        <ContactLink href="mailto:patrickj188Dev@gmail.com" target="_blank">
+          <Logo src={Email} />
+        </ContactLink>
+        <ContactLink href={resume} target="_blank">
+          <Logo src={ResumeLogo} />
         </ContactLink>
       </ContactInfo>
     </div>
