@@ -1,58 +1,3 @@
-
-  
-  /* .hex {
-    box-shadow: 40px 40px black;
-    display: flex;
-    position: relative;
-    width: 340px;
-    height: 365px;
-    background-color: #424242;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    
-  }
-
-   */
-
-
-  /* .even .hex{
-    display: flex;
-    position: relative;
-    width: 340px;
-    height: 365px;
-    background-color: #424242;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  } */
-/* 
-  .info{
-    text-align: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  } */
-
-
-
-/* .button-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    
-
-}
-.button-container a {
-    width: 30%;
-    height: 50px;
-    margin: 0 40px;
-    border: 1px solid black;
-    border-radius: 100px;
-    line-height: 2.2;
-
-} */ 
-
-
-
 .container {
   position: relative;
   margin: 10px auto;
@@ -64,12 +9,12 @@
   display: block;
   width: 700px;
   height: 500px;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -78,15 +23,15 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.about-text{
+.about-text {
   color: #393f4d;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
 .container:hover .image {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .container:hover .middle {
@@ -97,7 +42,7 @@
   color: #393f4d;
   font-size: 40px;
   padding: 16px 32px;
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   text-shadow: 1px 1px #393f4d;
 }
 
@@ -110,50 +55,66 @@
   border-radius: 10px;
 }
 
-
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-
 @media only screen and (max-width: 1450px) {
-
-   .image {
-    width: 600px;
+  .image {
+    width: 500px;
     height: 400px;
-   }
-   
-   .about-text{
-    font-size: 15px;
-   }
+  }
 
-   .text {
+  .about-text {
+    font-size: 15px;
+  }
+
+  .text {
     font-size: 35px;
   }
   .button {
@@ -162,21 +123,19 @@
     font-size: 12px;
     border-radius: 10px;
   }
-
 }
 
 @media only screen and (max-width: 1240px) {
-
-   .image {
-    width: 500px;
+  .image {
+    width: 400px;
     height: 300px;
-   }
-   
-   .about-text{
-    font-size: 12px;
-   }
+  }
 
-   .text {
+  .about-text {
+    font-size: 12px;
+  }
+
+  .text {
     font-size: 25px;
   }
 
@@ -186,55 +145,44 @@
     font-size: 12px;
     border-radius: 10px;
   }
-
-
 }
 
 @media only screen and (max-width: 1040px) {
-   .image {
+  .image {
     width: 500px;
-    height: 300px;
-   }
-   
-   .about-text{
+    height: 400px;
+  }
+
+  .about-text {
     font-size: 12px;
-   }
-   .text {
+  }
+  .text {
     font-size: 22px;
   }
-
 }
 @media only screen and (max-width: 760px) {
-
   .image {
-    width: 400px;
+    width: 300px;
     height: 200px;
   }
-  
-  .about-text{
+
+  .about-text {
     font-size: 10px;
   }
-  
+
   .text {
     font-size: 20px;
   }
-  
+
   .button {
     margin: 0 2px;
     padding: 5px 10px 5px 10px;
     font-size: 10px;
-
   }
-
 }
-  @media only screen and (max-width: 450px) {
-    
-    .image {
-      width: 400px;
-      height: 200px;
-    }
-    
+@media only screen and (max-width: 450px) {
+  .image {
+    width: 300px;
+    height: 200px;
+  }
 }
-
-
-

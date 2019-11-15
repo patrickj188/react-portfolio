@@ -53,7 +53,7 @@ const Contact = () => {
 
   return (
     <ContactInfo>
-      <ReachOut>Reach Out</ReachOut>
+      <ReachOut>Network & More</ReachOut>
       <ContactLink
         href="https://www.linkedin.com/in/patrickdeanjohnson/"
         target="_blank"
