@@ -16,7 +16,7 @@ const ButtonDiv = styled.div`
   width: 100%;
   margin: 0 auto;
   font-size: 30px;
-  padding-top: 10px;
+  padding-top: 3px;
   @media (max-width: 500px) {
     font-size: 15px;
   }
